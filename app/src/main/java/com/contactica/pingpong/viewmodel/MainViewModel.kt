@@ -1,4 +1,4 @@
-package com.contactica.pingpong.ui.main
+package com.contactica.pingpong.viewmodel
 
 import androidx.lifecycle.ViewModel
 

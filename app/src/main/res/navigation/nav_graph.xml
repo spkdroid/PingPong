@@ -7,7 +7,16 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.contactica.pingpong.ui.main.MainFragment"
+        android:name="com.contactica.pingpong.page.MainFragment"
         android:label="main_fragment"
-        tools:layout="@layout/main_fragment" />
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.contactica.pingpong.page.SummaryFragment"
+        android:label="summary_fragment"
+        tools:layout="@layout/summary_fragment" />
 </navigation>

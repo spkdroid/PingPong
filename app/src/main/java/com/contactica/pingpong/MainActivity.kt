@@ -3,7 +3,6 @@ package com.contactica.pingpong
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
-import com.contactica.pingpong.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 
