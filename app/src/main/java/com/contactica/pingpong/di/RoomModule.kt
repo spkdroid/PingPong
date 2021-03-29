@@ -14,12 +14,12 @@ import javax.inject.Singleton
 @Module
 public class RoomModule(application: Application) {
 
-    private var radioDatabase =
+     var radioDatabase =
         Room.databaseBuilder(application, RadioDatabase::class.java, "radio-db").build()
 
     @Singleton
     @Provides
-    fun provideDatabase(): RoomDatabase {
+    fun provideDatabase(): RadioDatabase {
         return radioDatabase
     }
 

@@ -6,7 +6,7 @@ import com.contactica.pingpong.model.Radio
 import javax.inject.Inject
 
 
-class RadioDataSource(@Inject var radioDao: RadioDao) : RadioRepository {
+class RadioDataSource @Inject constructor(var radioDao: RadioDao) : RadioRepository {
 
     override fun getAll(): LiveData<List<Radio>> {
         return radioDao.getAll()
