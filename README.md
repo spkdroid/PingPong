@@ -1,2 +1,2 @@
-# PingPong
-A simple widget application to read 
+# URL Radio Player
+A simple url radio player application
