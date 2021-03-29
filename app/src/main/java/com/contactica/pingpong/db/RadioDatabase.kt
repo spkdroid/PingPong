@@ -7,5 +7,5 @@ import com.contactica.pingpong.model.Radio
 
 @Database(entities = arrayOf(Radio::class), version = 1)
 abstract class RadioDatabase : RoomDatabase() {
-    abstract fun userDao(): RadioDao
+    abstract fun radioDao(): RadioDao
 }
