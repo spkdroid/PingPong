@@ -6,9 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.contactica.pingpong.R
 import com.contactica.pingpong.viewmodel.MainViewModel
 import com.contactica.pingpong.viewmodel.SummaryViewModel
+import kotlinx.android.synthetic.main.summary_fragment.*
 
 class SummaryFragment : Fragment() {
 
@@ -29,8 +31,9 @@ class SummaryFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(SummaryViewModel::class.java)
         // TODO: Use the ViewModel
-
-
+        addRadioStation.setOnClickListener {
+            Navigation.findNavController(requireView()).navigate(R.id.action_summaryFragment_to_addRadioFragment)
+        }
     }
 
 }
