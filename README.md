@@ -1,2 +1,3 @@
 # URL Radio Player
-A simple url radio player application
+
+A simple radio streaming application
