@@ -12,8 +12,6 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
-    @Inject
-    lateinit var radioRepository: RadioRepository
 
     lateinit var navHost: NavHostFragment
 

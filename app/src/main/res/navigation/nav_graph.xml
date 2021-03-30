@@ -18,5 +18,14 @@
         android:id="@+id/summaryFragment"
         android:name="com.contactica.pingpong.page.SummaryFragment"
         android:label="summary_fragment"
-        tools:layout="@layout/summary_fragment" />
+        tools:layout="@layout/summary_fragment" >
+        <action
+            android:id="@+id/action_summaryFragment_to_addRadioFragment"
+            app:destination="@id/addRadioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRadioFragment"
+        android:name="com.contactica.pingpong.page.AddRadioFragment"
+        android:label="add_radio_fragment"
+        tools:layout="@layout/add_radio_fragment" />
 </navigation>
