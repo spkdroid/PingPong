@@ -6,6 +6,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.contactica.pingpong.model.Radio
+import io.reactivex.Completable
 
 @Dao
 interface RadioDao {
@@ -16,8 +17,8 @@ interface RadioDao {
     fun findById(userIds: Int): LiveData<List<Radio>>
 
     @Insert
-    fun insert(radio: Radio)
+    fun insert(radio: Radio) : Completable
 
     @Delete
-    fun delete(radio: Radio)
+    fun delete(radio: Radio): Completable
 }

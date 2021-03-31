@@ -17,6 +17,8 @@ public interface AppComponent {
 
     fun inject(mainActivity: MainActivity)
 
+    fun inject(app: Application)
+
     fun radioDao(): RadioDao
 
     fun radioDatabase(): RadioDatabase
