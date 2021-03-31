@@ -3,6 +3,7 @@ package com.contactica.pingpong.repository
 import androidx.lifecycle.LiveData
 import com.contactica.pingpong.db.dao.RadioDao
 import com.contactica.pingpong.model.Radio
+import io.reactivex.Completable
 import javax.inject.Inject
 
 
@@ -12,11 +13,11 @@ class RadioDataSource @Inject constructor(var radioDao: RadioDao) : RadioReposit
         return radioDao.getAll()
     }
 
-    override fun insert(radio: Radio) {
+    override fun insert(radio: Radio): Completable {
         return radioDao.insert(radio)
     }
 
-    override fun delete(radio: Radio) {
+    override fun delete(radio: Radio): Completable {
         return radioDao.delete(radio)
     }
 

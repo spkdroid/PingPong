@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.contactica.pingpong.R
 import com.contactica.pingpong.viewmodel.AddRadioViewModel
+import kotlinx.android.synthetic.main.add_radio_fragment.*
 
 class AddRadioFragment : Fragment() {
 
@@ -26,6 +27,9 @@ class AddRadioFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(AddRadioViewModel::class.java)
         // TODO: Use the ViewModel
+        addRadioStationButton.setOnClickListener {
+
+        }
     }
 
 }
